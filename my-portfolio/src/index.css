@@ -1,0 +1,92 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-gradient {
+    animation: gradientMove 10s ease infinite;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .animate-pulse-glow {
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% { filter: drop-shadow(0 0 10px rgba(250, 204, 21, 0.7)); }
+    50% { filter: drop-shadow(0 0 25px rgba(250, 204, 21, 1)); }
+  }
+}
+
+/* index.css */
+body {
+  background-image: url("./assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* stays still when scrolling */
+}
+
+@keyframes cementNavGlow {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6))
+            drop-shadow(0 0 10px rgba(120, 120, 120, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.8))
+            drop-shadow(0 0 25px rgba(100, 100, 100, 0.5));
+  }
+  100% {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6))
+            drop-shadow(0 0 10px rgba(120, 120, 120, 0.4));
+  }
+}
+
+.animate-cement-nav {
+  animation: cementNavGlow 2.5s infinite ease-in-out;
+}
+
+
+.animate-glow {
+  animation: glow 2s infinite ease-in-out;
+}
+.font-sans { 
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.font-fancy { 
+  font-family: 'Pacifico', cursive; 
+}
+
+@keyframes cementGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6))
+            drop-shadow(0 0 10px rgba(120, 120, 120, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.8))
+            drop-shadow(0 0 25px rgba(100, 100, 100, 0.6));
+  }
+}
+
+.animate-cement-glow {
+  animation: cementGlow 3s infinite ease-in-out;
+}
+
+
+
+.menu-glow {
+  animation: neonPulse 1.5s infinite alternate;
+}
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
