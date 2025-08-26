@@ -23,7 +23,7 @@ const services = [
     link: "/portfolio",
   },
   {
-    title: "Advertisement Website",
+    title: "Advertisement/Services Website",
     description: "Promote your products/services with impactful ad websites.",
     icon: "📢",
     link: "/advertisement",
