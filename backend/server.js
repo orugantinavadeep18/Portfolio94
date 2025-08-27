@@ -125,5 +125,5 @@ app.post("/contact", async (req, res) => {
 
 const PORT = 5000;
 app.listen(PORT, () =>
-  console.log(`✅ Backend running on http://localhost:${PORT}`)
+  console.log(`✅ Backend running on https://portfolio94.onrender.com${PORT}`)
 );
