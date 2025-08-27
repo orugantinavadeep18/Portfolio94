@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
-import contactAnim from "../assets/contact.json";
+import contactAnim from "../assets/Contact.json";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const ContactUs = () => {
