@@ -88,10 +88,10 @@ const Home = () => {
       className="h-full w-full bg-cover bg-center relative"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      {showPopup && (
+{/*       {showPopup && (
         <PopupForm onSubmit={handleFormSubmit} onAdminLogin={handleAdminLogin} />
       )}
-
+ */}
       <Navbar />
 
       {/* Hero Section */}
